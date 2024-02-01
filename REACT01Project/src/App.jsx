@@ -7,11 +7,13 @@ function Myapp(){
 }
 
 function App() {
+  var username = "sachin1728";
+
   return (
     <>
-   {/* <Chai/>
+   <Chai/>
    <h1>React App</h1>
-   <p>this is great.</p> */}
+   <p>this is great. {username}</p>
     <Myapp/>
    </>
   )
