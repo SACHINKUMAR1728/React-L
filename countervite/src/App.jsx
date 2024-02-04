@@ -11,8 +11,8 @@ function App() {
       alert("you have reached the limit")
     }
     else{
-      counter = counter + 1;
-      setcounter(counter);
+     
+      setcounter(counter+1);
     }
   }
   const removevalue= () =>{
