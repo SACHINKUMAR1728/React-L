@@ -15,9 +15,9 @@ function App() {
 
   const swap = ()=>{
     setFrom(to);
-    setTo(temp);
-    setConvertedAmount(amount);
-    setAmount(convertedAmount);
+    setTo(from);
+    // setConvertedAmount(amount);
+    // setAmount(convertedAmount);
   }
   const convert = ()=>
   {
@@ -67,9 +67,7 @@ function App() {
                              currencyOptions={options}
                              onCurencyChange={(Currency) => setTo(Currency)}
                             selectCurrency={to}
-                            amountDisabled={true}
-
-                         
+                            amountDisabled={true}                        
 
                           />
                       </div>

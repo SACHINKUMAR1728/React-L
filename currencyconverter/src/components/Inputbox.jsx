@@ -1,6 +1,17 @@
 import React from 'react';
 import { useId } from 'react';
 
+// InputBox component is a reusable component that can be used to create an input box with a label and a currency selection dropdown.
+// label: Label for the input box.
+// amount: Current value of the amount.
+// onAmountChange: Function to be called when the amount value changes.
+// onCurrencyChange: Function to be called when the currency selection changes.
+// currencyOptions: An array of currency options.
+// selectCurrency: Default selected currency.
+// amountDisabled: Boolean flag to disable the amount input.
+// currencyDisabled: Boolean flag to disable the currency selection dropdown.
+// className: Additional CSS classes to be applied to the component.
+
 function InputBox({
     label,
     amount,
