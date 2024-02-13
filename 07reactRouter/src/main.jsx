@@ -3,8 +3,11 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './Layout'
-import Home from './components/Home/Home'
-import About from './components/About/About'
+import Home from './components/Home/Home.jsx'
+import About from './components/About/About.jsx'
+import Contact from './components/Contact/Contact'
+import User from './components/User/User'
+import Github from './components/Github/Github'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +21,24 @@ const router = createBrowserRouter([
         path: 'about',
         element: <About />
       },
+      {
+        path: 'contact',
+        element: <Contact/>
+      
+      },
+      {
+        path: 'User/:id',
+        element: <User/>
+      },
+      {
+        loader: async()=>
+        {
+          const response = await fetch('https://api.github.com/users/SACHINKUMAR1728');
+          return response.json();
+        },
+        path: 'GitHub',
+        element: <Github />
+      }
     ],
   }
 ])
