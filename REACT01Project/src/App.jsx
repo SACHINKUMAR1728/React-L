@@ -1,4 +1,4 @@
-import Chai from './chai.jsx';
+import Chai from './Chai.jsx';
 
 function Myapp(){
     return(
@@ -19,3 +19,4 @@ function App() {
   )
 }
 export default App
+
