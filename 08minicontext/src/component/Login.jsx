@@ -9,9 +9,7 @@ function login(){
 
     const handlesubmit=(e)=>{
         e.preventDefault();
-        setUser({username,password});
-
-
+        setUser({username,password});       
     }
     return (
         <div>
