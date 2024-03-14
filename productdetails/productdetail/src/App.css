@@ -1,0 +1,38 @@
+/* App.css */
+
+.App {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between; /* Adjusted to space between items */
+  background-color: #0c0b1a;
+  position: sticky;
+  top: 0;
+  color: #fff;
+  padding: 10px 20px;
+}
+.cart span{
+  color: #fff;
+  /* background-color: #c9b3b3; */
+  padding: 5px 10px;
+  /* border-radius: 50%; */
+
+ 
+}
+.navbar h1 {
+  margin: 0;
+}
+
+
+
+.product-list {
+  display: flex;
+  justify-content: space-between; /* Centering product details */
+  padding: 20px;
+  margin: auto;
+  
+}
