@@ -9,7 +9,7 @@ function Button() {
     };
 
     const handleAdd = () => {
-        setAdder(prevAdder => prevAdder + 1);
+        setAdder( adder + 1);
     };
 
     return (
@@ -19,14 +19,10 @@ function Button() {
             <button onClick={handleSubscribe}>
                 {subscribe ? 'Subscribed' : 'Subscribe'}
             </button>
-            
+
             <button onClick={handleAdd}>Add</button>
 
-            {subscribe ? (
-                <div>Thank you for subscribing</div>
-            ) : (
-                <div>Subscribe to our channel</div>
-            )}
+            {subscribe ? (<div>Thank you for subscribing</div>) : (<div>Subscribe to our channel</div>)}
 
            
         </div>

@@ -6,15 +6,7 @@ function App() {
     <>
       <Button />
       <h1>this is react learning</h1>
-      <Button />  
-       <Button />  
-        <Button /> 
-          <Button />
-   
-    
-      
     </>
- 
   );
 }
 
